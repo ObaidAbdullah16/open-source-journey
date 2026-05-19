@@ -1,91 +1,71 @@
-# The Importance of Technical Writing in Open Source (and why it gets overlooked)
+# The Importance of Technical Writing in Open Source (and why it’s underestimated)
 
 Technical writing doesn’t always get the same respect as code. People see a merged feature PR as “real work” and a docs PR as “nice to have.”
 
-That mindset is common—and it’s wrong.
+That’s common, but it misses the point.
 
 ---
 
-## Docs are what turn code into a tool people can use
+## Docs turn code into something people can actually use
 
-Open source doesn’t win because it has the most features.
-It wins because people can:
+Open source doesn’t succeed only because it has features.
+It succeeds because people can:
 
-- adopt it quickly,
+- adopt it,
 - understand it,
 - and trust it.
 
-Docs are how that trust is built.
+Docs are a big part of that trust.
 
 ---
 
-## Good docs reduce maintainer burnout
+## Docs reduce maintainer load
 
-Every unclear doc becomes:
-
-- repeated questions,
-- repeated answers,
-- and repeated frustration.
-
-Great documentation is basically “support at scale.”
+When docs are unclear, the same questions get asked repeatedly.
+Clear docs scale support without burning out maintainers.
 
 ---
 
-## Docs shape the first impression
+## Docs are often the first impression
 
-For many users:
-
-- documentation is the product
-- the GitHub repo is the backend
-
-If the docs are confusing, the project feels confusing—no matter how good the code is.
+For many users, documentation is the “front product.”
+If docs are confusing, the whole project feels confusing—even if the code is great.
 
 ---
 
 ## Docs create contributors
 
-Most contributors don’t start by changing core architecture.
-They start by:
+Most people don’t start by changing core architecture.
+They start by fixing a doc line, correcting an example, or improving a setup guide.
 
-- fixing a doc line,
-- correcting an example,
-- or clarifying setup steps.
-
-Docs are the easiest entry point into contribution.
-
-And once someone makes one PR, they often make more.
+Docs are one of the simplest entry points into a project.
 
 ---
 
-## “Documentation debt” is real debt
+## Documentation debt is real
 
-A project can move fast in code for months, but if docs don’t match reality:
+If docs don’t match reality:
 
 - users waste time,
-- bugs get reported that are actually doc problems,
+- issues get filed that are really doc problems,
 - and adoption slows down.
 
-Docs are the difference between “cool project” and “usable project.”
+Good docs prevent a lot of avoidable friction.
 
 ---
 
-## Why docs work is undervalued
+## Why docs work gets undervalued
 
-Because it’s harder to measure.
-A code PR feels concrete. Docs impact is quieter:
+Docs impact is quiet:
 
-- fewer questions,
-- faster onboarding,
-- fewer mistakes,
-- and fewer abandoned installs.
+- fewer repeated questions
+- faster onboarding
+- fewer broken installs
 
-But the impact is there.
+But it’s still impact.
 
 ---
 
 ## My view
 
-In open source, writing is part of engineering.  
-If the goal is adoption, community growth, and real usage, documentation is not optional.
-
-It’s the bridge between maintainers and everyone else.
+Writing is part of engineering. If a project wants adoption and community growth, documentation isn’t optional.

@@ -1,49 +1,51 @@
-# 🌿 My Open Source Journey
+# My Open Source Journey
 
-I’ll be honest: I didn’t wake up one day with a burning passion to contribute to open source.  
-It started with curiosity, some imposter syndrome, and a lot of late-night Googling.
-
----
-
-## Where I Began
-
-Like a lot of newcomers, my first exposure was fixing typos in docs—literally.  
-I remember doubting:
-
-> “Is this even worth a pull request? Will anyone care?”
-
-Turns out, maintainers are genuinely thankful when you save other users from confusion, no matter how small it seems.
+I didn’t start open source because I had a perfect plan. I started because I wanted to learn by doing, and open source was the fastest way to work on real problems in public.
 
 ---
 
-## First Real Contribution
+## Where I began
 
-My first “real” open source contribution was to kubeflow using my friend's account(He needed my help).  
-What I learned:
+My first exposure was documentation—fixing small issues where I could understand the problem quickly and submit a clean PR.
 
-- **Reading code is harder than writing it.**
-- No one expects you to know everything on Day 1.
-- Communication is a skill. If you don’t understand the issue—ask. Most maintainers want you to succeed.
-- Even rejected PRs are an opportunity (for learning and good stories).
+At the time I kept thinking:
 
----
+> “Is this too small to matter?”
 
-## Landmarks Along the Way
-
-- **First PR merged:** It felt better than a 99 on an exam.
-- **My first “request changes” review:** Ouch, but that’s how you actually get better.
-- **My first “thank you” from a maintainer:** Validation is real.
-- **First issue I reported that got fixed:** I was surprised; it feels powerful to help shape a tool others use!
+But small improvements add up, especially when they prevent confusion for the next person.
 
 ---
 
-## What Open Source Gave Me
+## First real contribution
 
-- Actual confidence with Git/CLI
-- Survival skills in reading other people’s code
-- How to take feedback professionally (not personally)
-- The realization that shared, public work is more valuable than side-projects I never publish
+My first real contribution was around the Kubeflow ecosystem. I helped a friend with changes on their fork while I was still learning the workflow. Looking back, that taught me two important lessons:
 
-If you’re thinking of contributing: start small, but start. You won’t regret it.
+- It’s better to contribute under your own account whenever possible (credit + transparency).
+- The technical part is only half the work—Git workflow, communication, and reviews matter just as much.
+
+What I learned from that experience:
+
+- **Reading existing code is harder than writing new code.**
+- Nobody expects you to understand everything on day one.
+- If you’re stuck, asking early saves time.
+- Reviews can be uncomfortable, but they level you up quickly.
 
 ---
+
+## Landmarks so far
+
+- **First PR merged:** It felt like real progress.
+- **First “request changes”:** not fun, but it made the work better.
+- **First time a maintainer said “thanks”:** that’s when it really clicked that contributions matter.
+- **First issue I reported that got fixed:** it showed me that communication can shape the product.
+
+---
+
+## What open source gave me
+
+- more confidence with Git and the CLI
+- better habits for reading other people’s code
+- thicker skin about feedback
+- a strong preference for shipping small improvements rather than keeping private side projects forever
+
+If you’re thinking about starting: pick something small, do it properly, and submit it. The first PR is the hardest one.

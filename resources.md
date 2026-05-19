@@ -1,16 +1,16 @@
-# 📚 Helpful Resources
+# Helpful Resources
 
-Here are links, books, and sites that have genuinely helped me in open source:
+These are links and references that genuinely helped me understand open source workflows and write better docs.
 
-- [First Contributions](https://firstcontributions.github.io/) — Interactive guide
-- [“Producing OSS” by Karl Fogel](https://producingoss.com/) — _If you read one book on open source, make it this one_
+- [First Contributions](https://firstcontributions.github.io/) — A practical first PR guide
+- [Producing Open Source Software (Karl Fogel)](https://producingoss.com/) — Best book I’ve read on how open source projects actually work
 - [Kyverno Docs](https://kyverno.io/docs/)
 - [Meshery Docs](https://docs.meshery.io/)
-- [PipeCD Docs](https://pipecd.dev/docs-v0.56.x/)
-- [How to Write Good Documentation](https://documentation.divio.com/)
-- [Good Commit Messages](https://cbea.ms/git-commit/)
-- [Stack Overflow](https://stackoverflow.com/) — For the brave
+- [PipeCD Docs](https://pipecd.dev/) — Main docs (versioned docs are linked from here)
+- [Divio Documentation System](https://documentation.divio.com/) — Clear way to think about doc types (tutorials vs how-to vs reference)
+- [How to Write a Git Commit Message](https://cbea.ms/git-commit/)
+- [Stack Overflow](https://stackoverflow.com/) — Still useful when you know what to ask
 
 ---
 
-> Got a favorite resource? Open a PR to add it!
+If you have a resource you think I should add, feel free to open a PR.

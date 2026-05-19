@@ -1,26 +1,22 @@
 # Documenting Large Projects: What I Keep in Mind
 
-When a project is big (multiple teams, many modules, lots of history), documentation needs to work like a navigation system. You’re not writing for one person reading start-to-finish. You’re writing for people who arrive stressed, busy, and mid-problem.
+In a big project (lots of modules, history, and contributors), documentation needs to work like navigation. People don’t read everything—they arrive with a goal, a bug, or a deadline.
 
-Here’s how I approach documentation for large projects.
-
----
-
-## 1. Don’t try to “document everything”
-
-Large projects die by documentation sprawl. If you try to write everything:
-
-- it won’t stay updated,
-- it will contradict itself,
-- and users stop trusting it.
-
-Instead, document the most common user journeys.
+Here’s what I keep in mind when writing docs for projects at this scale.
 
 ---
 
-## 2. Identify your “entry points”
+## 1. Don’t try to document everything
 
-Most readers want one of these:
+If you try to cover everything, the docs won’t stay updated and people stop trusting them.
+
+Instead: document the most common user journeys first.
+
+---
+
+## 2. Make the entry points obvious
+
+Most readers are looking for one of these:
 
 - installation / setup
 - first working example
@@ -28,102 +24,84 @@ Most readers want one of these:
 - troubleshooting
 - contributing
 
-If those entry points are weak, everything else feels harder.
+If those are weak, the rest of the docs won’t matter.
 
 ---
 
-## 3. Write like the repo is a city
+## 3. Treat the repo like a city
 
-Think of docs like city signs:
+Docs should help readers move quickly:
 
 - clear routes
-- consistent labeling
+- consistent labels
 - short paths to key destinations
 
-For example:
-
-- a “Getting Started” path
-- an “Advanced Topics” section
-- a “Reference” section
-- and “Troubleshooting”
+A few well-maintained hubs beat a hundred scattered pages.
 
 ---
 
-## 4. Make docs modular
+## 4. Keep pages small and link them well
 
-Long pages are hard to maintain. I prefer:
+Long pages are harder to keep correct.
+
+I prefer:
 
 - small focused pages
-- clear titles
-- predictable structure
-- heavy linking between pages
+- predictable headings
+- strong linking between related topics
 
-Modular docs also make PR reviews easier.
-
----
-
-## 5. Don’t break the reader’s mental model
-
-If you introduce a term, keep using it consistently.
-If the project uses “Policy” and “Rule,” don’t randomly switch to “Check” or “Validation unit.”
-
-Consistency is underrated.
+This also makes PR review easier.
 
 ---
 
-## 6. Include examples that match real-world usage
+## 5. Protect the reader’s mental model
 
-In big projects, “Hello World” examples help, but they are not enough.
-
-The best docs include:
-
-- minimal example (to get started)
-- realistic example (how teams actually use it)
-- common failure example (what breaks and how to fix it)
+If the project uses “Policy” and “Rule,” don’t casually switch to different terms. Consistency makes docs easier to understand and easier to search.
 
 ---
 
-## 7. Make troubleshooting a first-class feature
+## 6. Use examples that match real usage
 
-Good troubleshooting saves maintainers time.
+The best docs usually have:
 
-I like to include:
+- a minimal example (to start)
+- a realistic example (how teams actually run it)
+- a failure example (what breaks and how to fix it)
+
+---
+
+## 7. Treat troubleshooting as part of the product
+
+Troubleshooting sections reduce maintainer load.
+
+Good troubleshooting includes:
 
 - common error messages
 - why they happen
 - how to fix them
-- how to gather logs / debug info
+- what logs/info to gather before asking for help
 
 ---
 
-## 8. Protect docs from “rot”
+## 8. Fight documentation rot
 
-Docs rot when:
+Docs rot when commands change, defaults change, and examples stop working.
 
-- file paths change
-- commands change
-- default config changes
-- examples stop compiling
-
-A simple rule: if docs contain commands, someone should be able to run them from scratch.
-
-Even if automated tests aren’t possible, you can still manually validate the steps before merging.
+If docs include commands, someone should be able to run them from scratch. If that’s not testable automatically, it still needs manual verification before merging.
 
 ---
 
-## 9. Review docs like a user, not like an author
+## 9. Review docs like a user
 
 Before calling docs “done,” I try to:
 
-- open it on a fresh machine mindset
-- copy commands into a terminal
+- scan it in under a minute (does the structure work?)
 - click every link
-- scan it in under a minute and see if the structure makes sense
-
-If it’s hard to scan, it’s hard to use.
+- copy/paste commands (do they work?)
+- check if the reader can find the “next step”
 
 ---
 
 ## Final note
 
-In big projects, docs are part of the product. Good docs lower the support burden, make onboarding faster, and help the project scale beyond a small group of maintainers.
+In large projects, documentation is part of how the project scales. Good docs save time for users and maintainers.

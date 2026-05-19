@@ -1,101 +1,93 @@
 # PipeCD: Plugin Development Book & Docs DX — My Understanding & Plan
 
-## Project problem (in my own words)
+## Project problem (in my words)
 
-PipeCD has a powerful plugin-based architecture (especially in v1), but the best learning resource for building plugins is currently only available in Japanese. That creates a real barrier: many contributors and adopters can’t learn plugin development properly.
+PipeCD v1 has a plugin-based architecture, but the best learning resource for plugin development is currently only available in Japanese. That blocks a lot of potential contributors and slows adoption.
 
-This project aims to:
+This project is about publishing an English Plugin Development Book inside PipeCD docs, adding practical pipedv1 examples, improving documentation experience, and producing supporting content (blogs/videos/talks).
 
-- translate and expand the Plugin Development Book into English,
-- publish it inside PipeCD docs,
-- add real pipedv1 examples,
-- and improve docs experience so contributors can actually find and use the content.
+The core problem isn’t just “translation.” It’s onboarding for a global audience.
 
-It’s not just translation. It’s onboarding.
-
-## What I believe “success” looks like
+## What “success” looks like
 
 A motivated engineer should be able to:
 
-- open PipeCD docs,
-- follow an English Plugin Development Book,
+- open the docs,
+- follow the English book,
 - build a simple plugin,
 - understand how pipedv1 uses plugins,
-- and find real examples that match modern usage.
+- and find examples that match current usage.
 
-If a new contributor can go from “curious” → “first plugin PR” faster, the project is successful.
+If someone can realistically go from “interested” to “first plugin PR” faster, the project is working.
 
-## My understanding of PipeCD and where this work fits
+## My understanding of PipeCD (high level)
 
-From what I understand:
+My current mental model:
 
 - PipeCD is a continuous delivery system.
-- A key architectural idea is that deployments can target many platforms by using plugins.
-- piped is an agent-side component that runs deployment logic.
-- The docs and examples act as the bridge between the architecture and actual adoption.
+- piped runs agent-side and executes deployment logic.
+- plugins make it possible to support different platforms and workflows.
+- docs and examples are the bridge between architecture and actual usage.
 
-The project also includes “Docs DX” which matters because:
+Docs DX matters because even good content fails if:
 
-- even great content fails if navigation is confusing,
-- readers can’t find what they need,
-- and examples are missing or outdated.
+- it’s hard to find,
+- navigation is unclear,
+- steps don’t work,
+- or examples are outdated.
 
 ## My approach to solving the project problem
 
-### 1. Build the English book as a structured docs section
+### 1) Make the English book structured and easy to maintain
 
-Instead of one long page, I would keep it as a chapter-based structure:
+I’d avoid one long page. I’d keep it chapter-based:
 
-- Overview / Table of contents
-- Chapter 1: plugin architecture and mental model
-- Chapter 2: first plugin walkthrough
-- Chapter 3: config and lifecycle
-- Chapter 4: testing and debugging
+- overview / table of contents
+- architecture and mental model
+- first plugin walkthrough
+- configuration + lifecycle
+- testing + debugging
 
 Each chapter should include:
 
 - short explanations
-- real code snippets
+- real snippets
 - “common mistakes” callouts
-- small checkpoints so the reader knows they’re on track
+- checkpoints so readers know they’re on track
 
-### 2. Expand beyond translation
+### 2) Keep it accurate to the current repo
 
-Translation is useful, but the content should also fit the current PipeCD reality:
+If I write docs that don’t match the repo, it’s worse than no docs. So I’d:
 
-- confirm APIs, commands, and folder paths match current repo
-- update examples so they compile and run
-- add links to existing plugins in the codebase
-- document what changed since earlier versions
+- verify commands and paths
+- check APIs against the current codebase
+- keep examples minimal but runnable
+- link to existing plugins in the repo
 
-### 3. Add examples that match real adoption patterns
+### 3) Add practical pipedv1 examples
 
-pipedv1 examples should not be “toy” examples only. They should show:
+Examples should look like something people actually deploy:
 
-- typical repo layout
-- plugin configuration
-- how a platform team would actually run it
+- repo layout
+- plugin config
+- what a platform team would run, not just toy cases
 
-### 4. Improve discoverability and contributor experience
+### 4) Improve discoverability
 
-Small docs improvements can have big payoff:
+Small doc improvements can unlock the whole project:
 
-- better navigation and linking between sections
-- consistent terminology and “where to go next”
-- clear “how to run docs locally” steps for contributors
-- standard doc structure so future additions stay consistent
+- consistent “where to go next” links
+- clear “how to run docs locally” instructions
+- predictable structure so new chapters fit naturally
 
-## What I can contribute early (before deep plugin work)
+## What I can contribute early
 
-Even before writing advanced plugin code, I can contribute by:
+Even before deep plugin implementation, I can contribute by:
 
-- producing a clean English structure for the book
-- writing the first chapters in a way that is easy to review
-- adding “docs DX” improvements (navigation, clarity, consistent templates)
-- validating the instructions by running them and fixing what doesn’t work
+- drafting the book structure and the first chapters
+- doing small docs DX improvements that reduce confusion
+- validating every instruction by running it and fixing the parts that don’t work
 
-## Why I’m choosing this project
+## Why I’m interested in this project
 
-I like building learning material that makes complex systems approachable. PipeCD’s plugin architecture is valuable, but without English resources and examples, it stays locked behind a language barrier.
-
-My goal is to help new contributors ship their first plugin faster—and make the docs feel like a real product, not an afterthought.
+I like building learning material that makes complex systems approachable. PipeCD’s plugin architecture is valuable, but without English resources and practical examples it’s harder for the community to grow. I want to help reduce that friction.

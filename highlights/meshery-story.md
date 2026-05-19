@@ -1,83 +1,82 @@
 # Meshery: Relationships & Cloud Solution Architecture — My Understanding & Plan
 
-## Project problem (in my own words)
+## Project problem (in my words)
 
-Meshery models infrastructure and applications as components. But components alone don’t tell the story of a real system. The missing layer is how things connect: dependencies, networking, identity, parent-child structure, references, and integrations.
+Meshery models infrastructure and applications as components. But components alone aren’t enough to represent how systems actually behave. The missing part is the “how things connect” layer—relationships like dependencies, hierarchy, identity, networking, and references.
 
-This project is about expanding that relationship layer across Kubernetes and cloud providers (AWS/Azure/GCP), then using those relationships to build real solution architecture designs and tutorials in Meshery Playground.
+This project is about expanding relationships across Kubernetes and major cloud providers (AWS/Azure/GCP), and then using those relationships to publish real designs and tutorials in Meshery Playground.
 
-So the goal isn’t “add files.” The goal is to make complex architectures easier to understand, visually explore, and learn from.
+So it’s not just adding definitions. It’s improving the quality of modeling and the learning experience.
 
-## What I believe “success” looks like
+## What “success” looks like to me
 
-A user should be able to open Meshery Kanvas and:
+A user should be able to open Kanvas and:
 
-- drag cloud and Kubernetes components into a design,
-- see meaningful connections,
-- and understand what depends on what (and why).
+- put together a real architecture diagram,
+- connect components in a way that matches reality,
+- and understand what depends on what without reading a wall of text.
 
-Then they should be able to follow a tutorial/lab in Meshery Playground and learn a real architecture pattern without a complicated local setup.
+Then tutorials should use those designs to teach common architecture patterns.
 
-## My understanding of Meshery’s working model
+## My understanding of how Meshery structures this
 
-From what I understand:
+From what I understand so far:
 
-- **Models** describe a set of components (Kubernetes resources, cloud services, tools).
+- **Models** define components (Kubernetes resources, cloud services, tools).
 - **Relationships** define allowed interactions between components.
-- These relationships drive the correctness and usefulness of designs in Kanvas.
-- Good relationships also enable better documentation and tutorials because the designs “tell a story.”
+- Relationships power what Kanvas can connect and how it visualizes those connections.
+- If relationships are correct, designs become more useful and easier to reason about.
 
 A relationship definition should be:
 
-- specific enough to be meaningful
-- consistent with existing patterns (hierarchical vs edge vs reference types)
-- validated, easy to review, and not overlapping existing PRs
+- meaningful (not just “connect anything to anything”),
+- consistent with existing patterns,
+- small enough to review easily,
+- and ideally not overlapping other open PRs.
 
-## My approach to solving the project problem
+## My approach to contributing without overlap
 
-### 1. Pick a focused scope with low overlap
+### 1) Pick a narrow scope
 
-Meshery has large “master issues” where many contributors overlap. My plan is:
+Meshery has a few “master issues” where a lot of work overlaps. My approach would be:
 
-- avoid crowded areas unless I can clearly add something missing
-- pick one cloud service family (example: Azure Batch Pools/Jobs, or AWS CloudFront, or GCP Cloud Run)
-- define a small, reviewable set of relationships
+- choose one service area with less active PR traffic,
+- add a small set of relationships (2–6),
+- and keep the PR easy to review.
 
-### 2. Research first, then model
+### 2) Research first
 
-I treat it like a lightweight architecture exercise:
+Before writing relationship definitions, I’d answer:
 
-- What are the real components?
-- What are the “must-have” relationships for understanding?
-- What is parent/child vs a loose integration?
+- what are the real components involved?
+- which relationships help users understand the system?
+- what’s a parent/child relationship vs a looser integration?
 
-Then I convert that into relationship definitions.
+### 3) Validate with a small Kanvas design
 
-### 3. Validate by building a tiny design in Kanvas
+My definition of “it works” is:
 
-My working definition of “relationship works”:
+- I can add the components into Kanvas,
+- connect them according to the relationship,
+- and Meshery accepts and displays the relationship properly.
 
-- I can place the components into Kanvas,
-- connect them,
-- and Meshery accepts the relationship and shows it correctly.
+### 4) Provide proof for maintainers
 
-### 4. Produce proof for review (screenshots/video)
+Since maintainers often ask for proof:
 
-Since maintainers ask for proof:
+- **Screenshots** showing the design and visible relationship lines
+- **Short video** (30–60 seconds) showing creating/connecting components
 
-- **Screenshots**: show the design in Kanvas with relationship lines visible
-- **Short video**: 30–60 seconds is enough (create design → connect components → show it working)
+I’d keep it simple: show 2–3 relationships clearly, not a full architecture demo.
 
-I’d keep it simple: show 2–3 relationships clearly rather than trying to demonstrate an entire system.
+## What I can contribute early
 
-## What I can contribute early (even as a beginner)
+As a first contribution, I can do:
 
-- Relationship definitions for a less-covered service area (or a missing gap inside an existing model)
-- Small, clean PRs that add a limited number of relationships with good naming and metadata
-- A design file and short tutorial that demonstrates a real-world pattern (once relationships exist)
+- one small relationship PR in a less crowded model area
+- clear naming/metadata and clean PR descriptions
+- a tiny design that demonstrates the relationships in Kanvas
 
-## Why I’m choosing this project
+## Why I’m interested in this project
 
-I like work where I have to understand systems at a “diagram level” and then turn that into something that helps other people learn. Relationships + designs + tutorials is a clean path for that.
-
-My main focus is to ship useful, reviewable chunks: define relationships → prove them in Kanvas → turn them into simple learning material.
+I like work that requires system thinking at “diagram level” and then turning that into something people can learn from. Relationships + designs + tutorials is a good mix of technical reasoning and communication.

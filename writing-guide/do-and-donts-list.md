@@ -1,34 +1,32 @@
-# ✅ Documentation Dos & 🚫 Don’ts
+# Documentation Dos & Don’ts
 
-Here’s a brutally honest checklist from my time writing decent (and terrible) docs.
+This is the checklist I keep in mind when I’m writing or editing docs. It’s based on mistakes I’ve made and patterns I’ve seen in projects that are easy to learn.
 
 ---
 
-## ✅ Dos
+## Dos
 
-- **Start with the “why”** before diving into code
-- Use short paragraphs and plenty of whitespace
-- Show working examples—real code/config, not pseudo-code
+- Start with the **why** before diving into steps
+- Use short paragraphs and whitespace (docs should be scannable)
+- Show working examples—real code/config, not pseudo-code only
 - Use checklists for requirements
-- Be direct—“Run this”, “Configure that”
-- Link out to external docs rather than duplicating content
-- Use consistent terminology (e.g., “GitHub Actions” not “gh workflows”)
+- Be direct: “Run this”, “Configure that”
+- Link to authoritative external docs instead of duplicating them
+- Use consistent terminology (for example, “GitHub Actions” not “gh workflows”)
 
 ---
 
-## 🚫 Don’ts
+## Don’ts
 
 - Don’t assume the reader has your context or environment
-- Avoid “just” or “simply” (“Just set X” = missing a step for many!)
-- Don’t bury commands in paragraphs—use code blocks
-- Don’t include jargon unless you define it right away
-- Don’t skip known pain points (“If you see XYZ error, try ABC”)
-- Don’t blame the user for mistakes—clarify, don’t condescend
+- Avoid “just” or “simply” (“Just set X” usually hides missing steps)
+- Don’t bury commands inside paragraphs—use code blocks
+- Don’t throw jargon at readers without defining it
+- Don’t skip known pain points (“If you see X error, try Y” saves a lot of time)
+- Don’t blame the user for mistakes—clarify the doc instead
 
 ---
 
-## My Last (Unscientific) Rule
+## My rule of thumb
 
-If you’re sick of copy-pasting your own config each time you set something up, write the doc you wish you had the _first_ time.
-
----
+If you’re sick of copy-pasting your own setup steps every time you reinstall something, write the doc you wish you had the first time.
